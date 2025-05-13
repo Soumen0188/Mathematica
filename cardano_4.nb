@@ -1,0 +1,159 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4274,        149]
+NotebookOptionsPosition[      3849,        133]
+NotebookOutlinePosition[      4192,        148]
+CellTagsIndexPosition[      4149,        145]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "5"], "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "4"], "=", " ", 
+   FractionBox[
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["\[Omega]", "2"], "+", " ", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["q", "2"], 
+        SuperscriptBox["B", "2"]}], "8"]}], ")"}], 
+    RowBox[{"2", " ", "\[Lambda]"}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "3"], "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "2"], "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "1"], "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "0"], "=", " ", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox["m", "2"], 
+      SuperscriptBox["h", "2"]}], 
+     RowBox[{"16", " ", "\[Lambda]"}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "7"], "=", " ", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["a", "3"], " ", 
+     FractionBox[
+      SubscriptBox["a", "4"], "4"]}], "+", " ", 
+    RowBox[{
+     SubscriptBox["a", "4"], 
+     FractionBox[
+      SuperscriptBox[
+       SubscriptBox["a", "5"], "3"], "16"]}], "-", " ", 
+    RowBox[{
+     SuperscriptBox[
+      SubscriptBox["a", "4"], "2"], 
+     FractionBox[
+      SubscriptBox["a", "5"], "8"]}], "-", " ", 
+    RowBox[{
+     SubscriptBox["a", "3"], 
+     FractionBox[
+      SuperscriptBox[
+       SubscriptBox["a", "5"], "2"], "16"]}], "-", 
+    FractionBox[
+     SuperscriptBox[
+      SubscriptBox["a", "5"], "5"], "128"], "-", 
+    FractionBox[
+     SubscriptBox["a", "1"], "2"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "6"], "=", 
+   SqrtBox[
+    RowBox[{
+     RowBox[{"5", " ", 
+      FractionBox[
+       SuperscriptBox[
+        SubscriptBox["a", "5"], "4"], "64"]}], "-", 
+     RowBox[{"3", " ", 
+      SubscriptBox["a", "4"], 
+      FractionBox[
+       SuperscriptBox[
+        SubscriptBox["a", "5"], "2"], "8"]}], "+", " ", 
+     FractionBox[
+      SuperscriptBox[
+       SubscriptBox["a", "4"], "2"], "4"], "+", " ", 
+     RowBox[{
+      SubscriptBox["a", "3"], 
+      FractionBox[
+       SubscriptBox["a", "5"], "2"]}], "  ", "-", " ", 
+     SubscriptBox["a", "2"]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Evaluate", "[", 
+  RowBox[{
+   SubscriptBox["a", "6"], ",", " ", 
+   SubscriptBox["a", "7"]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9476334153080215`*^9, 3.9476335460617294`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"3e97848f-ade2-4b0d-b740-1b09ba24d64b"],
+
+Cell[BoxData[
+ RowBox[{"Sequence", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "4"], " ", 
+    SqrtBox[
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["B", "2"], " ", 
+           SuperscriptBox["q", "2"]}], "8"], "+", 
+         SuperscriptBox["\[Omega]", "2"]}], ")"}], "2"], 
+      SuperscriptBox["\[Lambda]", "2"]]]}], ",", "0"}], "]"}]], "Output",
+ CellChangeTimes->{3.9476335474517145`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"58950b19-0934-4311-b467-c5f465c25b69"]
+}, Open  ]]
+},
+WindowSize->{759, 692},
+WindowMargins->{{Automatic, 131}, {13, Automatic}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2674, 89, 339, "Input",ExpressionUUID->"3e97848f-ade2-4b0d-b740-1b09ba24d64b"],
+Cell[3257, 113, 576, 17, 117, "Output",ExpressionUUID->"58950b19-0934-4311-b467-c5f465c25b69"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

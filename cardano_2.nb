@@ -1,0 +1,187 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5584,        177]
+NotebookOptionsPosition[      4934,        157]
+NotebookOutlinePosition[      5282,        172]
+CellTagsIndexPosition[      5239,        169]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Define", " ", "the", " ", "coefficients", " ", "of", " ", "the", " ", 
+    "cubic", " ", "equation"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", "=", "1"}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{"Coefficient", " ", "of", " ", 
+     RowBox[{"x", "^", "3"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"b", "=", 
+     FractionBox[
+      SuperscriptBox[
+       SubscriptBox["\[Omega]", "R"], "2"], 
+      RowBox[{"4", 
+       SubscriptBox["\[Lambda]", "R"]}]]}], ";", 
+    RowBox[{"(*", 
+     RowBox[{"Coefficient", " ", "of", " ", 
+      RowBox[{"x", "^", "2"}]}], "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"c", "=", "0"}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{"Coefficient", " ", "of", " ", "x"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d", "=", 
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"L", 
+        RowBox[{"(", 
+         RowBox[{"L", "+", "1"}], ")"}]}], 
+       RowBox[{"4", 
+        SubscriptBox["\[Lambda]", "R"]}]]}]}], ";", 
+    RowBox[{"(*", 
+     RowBox[{"Constant", " ", "term"}], "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{
+      "Convert", " ", "to", " ", "a", " ", "depressed", " ", "cubic", " ", 
+       "by", " ", "substituting", " ", "x"}], "=", 
+      RowBox[{"y", "-", 
+       RowBox[{"b", "/", 
+        RowBox[{"(", 
+         RowBox[{"3", "a"}], ")"}]}]}]}], "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"yCubed", "=", 
+     RowBox[{"a", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"w", "-", 
+         FractionBox["b", 
+          RowBox[{"3", " ", "a"}]]}], ")"}], "3"]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"ySquared", "=", 
+     RowBox[{"b", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"w", "-", 
+         FractionBox["b", 
+          RowBox[{"3", "a"}]]}], ")"}], "2"]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"yLinear", "=", 
+     RowBox[{"c", " ", 
+      RowBox[{"(", 
+       RowBox[{"w", "-", 
+        FractionBox["b", 
+         RowBox[{"3", "a"}]]}], ")"}]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"yConstant", "=", "d"}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{"depressedCubic", "=", 
+    RowBox[{"Expand", "[", 
+     RowBox[{"yCubed", "+", "ySquared", "+", "yLinear", "+", "yConstant"}], 
+     "]"}]}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.927438124277728*^9, 3.9274381242799225`*^9}, {
+  3.9274383133219566`*^9, 3.927438345476598*^9}, {3.927438397567961*^9, 
+  3.927438458681993*^9}, {3.927438520992837*^9, 3.927438529736087*^9}, {
+  3.9274386094080257`*^9, 3.9274386294472733`*^9}, {3.9274387324411583`*^9, 
+  3.927438789712009*^9}},ExpressionUUID->"932166cd-9ffe-453b-9759-\
+842345510e40"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["w", "3"], "-", 
+  FractionBox["L", 
+   RowBox[{"4", " ", 
+    SubscriptBox["\[Lambda]", "R"]}]], "-", 
+  FractionBox[
+   SuperscriptBox["L", "2"], 
+   RowBox[{"4", " ", 
+    SubscriptBox["\[Lambda]", "R"]}]], "-", 
+  FractionBox[
+   RowBox[{"w", " ", 
+    SubsuperscriptBox["\[Omega]", "R", "4"]}], 
+   RowBox[{"48", " ", 
+    SubsuperscriptBox["\[Lambda]", "R", "2"]}]], "+", 
+  FractionBox[
+   SubsuperscriptBox["\[Omega]", "R", "6"], 
+   RowBox[{"864", " ", 
+    SubsuperscriptBox["\[Lambda]", "R", "3"]}]]}]], "Output",
+ CellChangeTimes->{3.92743846460813*^9, 3.9274385308270564`*^9, 
+  3.927438635132308*^9, 
+  3.927438802681238*^9},ExpressionUUID->"6d877be8-c690-47aa-8a7c-\
+620ed20781f8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", "depressedCubic", "]"}]], "Input",
+ NumberMarks->False,ExpressionUUID->"e12c281b-7a7b-4f5c-a1fc-3a269762140c"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["w", "3"], "-", 
+  FractionBox[
+   RowBox[{"L", " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", "L"}], ")"}]}], 
+   RowBox[{"4", " ", 
+    SubscriptBox["\[Lambda]", "R"]}]], "-", 
+  FractionBox[
+   RowBox[{"w", " ", 
+    SubsuperscriptBox["\[Omega]", "R", "4"]}], 
+   RowBox[{"48", " ", 
+    SubsuperscriptBox["\[Lambda]", "R", "2"]}]], "+", 
+  FractionBox[
+   SubsuperscriptBox["\[Omega]", "R", "6"], 
+   RowBox[{"864", " ", 
+    SubsuperscriptBox["\[Lambda]", "R", "3"]}]]}]], "Output",
+ CellChangeTimes->{
+  3.9274388083538485`*^9},ExpressionUUID->"532bb966-6266-4b67-a2db-\
+0e8089fb1322"]
+}, Open  ]]
+},
+WindowSize->{759, 697},
+WindowMargins->{{Automatic, 380}, {24, Automatic}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2776, 79, 411, "Input",ExpressionUUID->"932166cd-9ffe-453b-9759-842345510e40"],
+Cell[3359, 103, 737, 22, 63, "Output",ExpressionUUID->"6d877be8-c690-47aa-8a7c-620ed20781f8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4133, 130, 150, 2, 28, "Input",ExpressionUUID->"e12c281b-7a7b-4f5c-a1fc-3a269762140c"],
+Cell[4286, 134, 632, 20, 96, "Output",ExpressionUUID->"532bb966-6266-4b67-a2db-0e8089fb1322"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
